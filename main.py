@@ -30,8 +30,8 @@ def main():
     text = input()
     if "I" in text:
         text = input()
-    mismatch = find_mismatch(text)
-    print(mismatch)
+        mismatch = find_mismatch(text)
+        print(mismatch)
 
 if __name__ == "__main__":
     main()
