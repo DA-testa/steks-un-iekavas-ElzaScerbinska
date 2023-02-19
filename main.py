@@ -1,5 +1,6 @@
 # python3
 
+
 from collections import namedtuple
 
 Bracket = namedtuple("Bracket", ["char", "position"])
@@ -24,10 +25,8 @@ def find_mismatch(text):
 
             opening_brackets_stack.pop()
     if not opening_brackets_stack:
-        return "Success"
-    else:
         return opening_brackets_stack[-1].position
-    
+    return "Success"
 
 def main():
     text = input()
